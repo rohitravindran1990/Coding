@@ -8,7 +8,7 @@ public class AppController {
 	
 	@GetMapping("/response")
 	public String response() {
-		return "ok response";
+		return "response";
 		
 	}
 
