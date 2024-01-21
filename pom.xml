@@ -15,7 +15,7 @@
 	<name>app</name>
 	<description> Spring Boot Docket app</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -59,25 +59,14 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>com.google.cloud.tools</groupId>
-				<artifactId>jib-maven-plugin</artifactId>
-				<version>2.6.0</version>
-				<configuration>
-					<to>
-						<image>registry.hub.docker.com/javatechie/google-jib-image-example</image>
-					</to>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
-
 
 
 </project>
